@@ -1,0 +1,20 @@
+name: Build something
+
+on:
+  workflow_call:
+  pull_request:
+    types:
+      - synchronize
+      - opened
+
+jobs:
+  tag-and-release:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      id-token: write
+      pull-requests: write
+      issues: write
+    steps:
+      - name: Build
+        uses: sequoiahead/renovate-reproduction/build-action@build-action-v1.0.0

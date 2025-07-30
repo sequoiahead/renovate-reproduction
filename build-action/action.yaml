@@ -1,0 +1,12 @@
+name: build-action
+
+runs:
+  using: "composite"
+  steps:
+    - name: Common build steps
+      uses: sequoiahead/renovate-reproduction/common-build@common-build-v1.0.0
+
+    - name: Build something
+      shell: bash
+      run: |
+        echo "building..."

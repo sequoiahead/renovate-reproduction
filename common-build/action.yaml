@@ -1,0 +1,9 @@
+name: build-action
+
+runs:
+  using: "composite"
+  steps:
+    - name: Build
+      shell: bash
+      run: |
+        echo "Executing Commmon build steps..."
