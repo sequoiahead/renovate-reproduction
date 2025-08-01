@@ -13,7 +13,7 @@ Setup consist of 3 Github repos:
 https://github.com/sequoiahead/renovate-reproduction-config - contains renovate configuration
 
 https://github.com/sequoiahead/renovate-reproduction - includes config from `renovate-reproduction-config`. This is 
-repository to get update PRs created
+repository to get update PRs created. Uses Github Actions from https://github.com/sequoiahead/renovate-reproduction-actions
 
 https://github.com/sequoiahead/renovate-reproduction-actions - Github Actions repository with tags `@<action-name>-v<semver>` 
 representing GHAs version
