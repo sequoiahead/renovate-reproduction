@@ -17,4 +17,4 @@ jobs:
       issues: write
     steps:
       - name: Build
-        uses: sequoiahead/renovate-reproduction/build-action@build-action-v1.0.0
+        uses: sequoiahead/renovate-reproduction-actions/build-action@build-action-v1.0.0
